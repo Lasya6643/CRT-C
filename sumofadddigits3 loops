@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    int n,dis,r;
+    scanf("%d",&n);
+    dis=0;
+    while(n!=0){
+        r=n%10;
+        if(r%2!=0){
+            dis=dis+r;
+        }
+        n=n/10;
+    }
+    printf("%d",dis);
+    return 0;
+}
