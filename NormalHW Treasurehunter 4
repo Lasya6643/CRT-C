@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    int x,y,z;
+    scanf("%d%d%d",&x,&y,&z);
+    int lb=(y*x)/100;
+    int left=(x-lb);
+    int bb=((z*x)-(z*lb))/100;
+    int lef=(x-lb-bb);
+    printf("%d\n%d\n%d",lb,bb,lef/3);
+    return 0;
+}
