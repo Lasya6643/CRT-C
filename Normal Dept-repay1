@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int X,R,Y;
+    scanf("%d %d %d",&X,&R,&Y);
+    float intrest,amount,discount,final;
+    intrest=(X*R*Y)/100;
+    amount=intrest+X;
+    discount=(intrest*2)/100;
+    final=amount-discount;
+    printf("%.2f\n%.2f\n%.2f\n%.2f\n",intrest,amount,discount,final);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
