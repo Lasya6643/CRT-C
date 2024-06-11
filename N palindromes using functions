@@ -1,0 +1,28 @@
+#include <stdio.h>
+int palin(int);
+int palin(int n){
+    int sum,temp,r;
+    sum=0;
+    temp=n;
+    while(n!=0){
+    r=n%10;
+    sum=sum*10+r;
+    n=n/10;
+    }
+    if(temp==sum){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
+int main(){
+    int n,i,count;
+    scanf("%d",&n);
+    for(i=0,count=0;count<=n;i++){
+if (palin(i)) {
+        printf("%d \n", i);
+        count++;
+    }
+}
+}
