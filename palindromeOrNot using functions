@@ -1,0 +1,28 @@
+#include <stdio.h>
+int palin(int);
+int palin(int n){
+    int sum,temp,r;
+    sum=0;
+    temp=n;
+    while(n!=0){
+    r=n%10;
+    sum=sum*10+r;
+    n=n/10;
+    }
+    if(temp==sum){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
+int main(){
+    int n;
+    scanf("%d",&n);
+if (palin(n)) {
+        printf("%d is palindrome \n",n);
+    }
+else{
+ printf("%d is not palindrome\n",n);
+}
+}
